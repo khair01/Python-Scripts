@@ -4,7 +4,6 @@ import ssl
 import smtplib
 from email.message import EmailMessage
 import easygui as eg
-
 path = eg.fileopenbox()
 emails_df = pd.read_csv(path)
 emails = emails_df['email']
