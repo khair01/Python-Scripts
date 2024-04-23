@@ -9,11 +9,8 @@ path = eg.fileopenbox()
 emails_df = pd.read_csv(path)
 emails = emails_df['email']
 names = emails_df['name']
-email_sender = 'k224290@nu.edu.pk'
-# email_sender = "khairs4200@gmail.com"
-
-# email_password = os.getenv("pass")
-email_password = "rjkx zicx wczo yhan"
+email_sender = 'your_email'
+email_password = "your password"
 subject = 'Code Sprint Team Dev Day 2024'
 count = 0
 total_emails = len(emails)
@@ -23,9 +20,9 @@ Dear {data[1]},
 
 Please join the provided Google Classroom and Whatsapp Group Link to stay updated on the competition.
 
-Gcr Code: bu7vskk
-Gcr Link: https://classroom.google.com/c/Njc1ODYzMjgwNTk0?cjc=bu7vskk
-Whatsapp Group: https://chat.whatsapp.com/HB0KZsn8QUALY5yTGBb5nt
+Gcr Code: 
+Gcr Link: 
+Whatsapp Group: 
 
 Best regards,
 Code Sprint Team
@@ -51,3 +48,4 @@ Code Sprint Team
 # print(count)
 if(count == total_emails):
     print("[+]  Emails sent successfully.")
+  
