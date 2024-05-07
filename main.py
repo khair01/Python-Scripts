@@ -4,28 +4,19 @@ import ssl
 import smtplib
 from email.message import EmailMessage
 import easygui as eg
+
 path = eg.fileopenbox()
 emails_df = pd.read_csv(path)
 emails = emails_df['email']
 names = emails_df['name']
-email_sender = 'your_email'
-email_password = "your password"
-subject = 'Code Sprint Team Dev Day 2024'
+email_sender = "" #sender email
+
+email_password = "" #sender email pass key ( App Password )
+subject = ''
 count = 0
 total_emails = len(emails)
 for  data in zip(emails, names):
-    body = f'''
-Dear {data[1]},
-
-Please join the provided Google Classroom and Whatsapp Group Link to stay updated on the competition.
-
-Gcr Code: 
-Gcr Link: 
-Whatsapp Group: 
-
-Best regards,
-Code Sprint Team
-'''
+    body = f''' '''
 
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
